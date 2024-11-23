@@ -16,7 +16,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y wget
-          wget https://github.com/jgraph/drawio-desktop/releases/download/v20.8.10/draw.io-x86_64-20.8.10.AppImage
+          wget https://github.com/jgraph/drawio-desktop/releases/download/v24.7.17/drawio-x86_64-24.7.17.AppImage
           chmod +x draw.io-x86_64-20.8.10.AppImage
           for file in $(find . -name "*.drawio"); do
             ./draw.io-x86_64-20.8.10.AppImage --export --format png --output "$(dirname $file)" $file
