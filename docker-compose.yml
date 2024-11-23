@@ -1,0 +1,13 @@
+version: "3"
+services:
+  react-app:
+    build: frontend/
+    tty: true
+    volumes:
+      - ./frontend:/frontend
+    command: sh -c "npm run dev"
+    ports:
+      - "3000:3000"
+
+volumes:
+  frontend:
