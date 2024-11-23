@@ -1,0 +1,31 @@
+name: Convert Draw.io to PNG
+
+on:
+  push:
+    paths:
+      - "**/*.drawio"
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Convert .drawio to .png
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wget
+          wget https://github.com/jgraph/drawio-desktop/releases/download/v20.8.10/draw.io-x86_64-20.8.10.AppImage
+          chmod +x draw.io-x86_64-20.8.10.AppImage
+          for file in $(find . -name "*.drawio"); do
+            ./draw.io-x86_64-20.8.10.AppImage --export --format png --output "$(dirname $file)" $file
+          done
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add **/*.png
+          git commit -m "Auto-generated PNGs for .drawio files" || echo "No changes to commit"
+          git push
