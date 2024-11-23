@@ -16,6 +16,18 @@
                 <mxCell id="6" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#e3c800;strokeColor=#B09500;fontColor=#000000;" vertex="1" parent="1">
                     <mxGeometry x="335.75" y="482.75" width="98.5" height="98.5" as="geometry"/>
                 </mxCell>
+                <mxCell id="9" value="&lt;font color=&quot;#000000&quot;&gt;Entities&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;gradientColor=default;strokeColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="325" y="502" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="&lt;font color=&quot;#000000&quot;&gt;Use Cases&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;gradientColor=default;strokeColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="325" y="442" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="&lt;font color=&quot;#000000&quot;&gt;Controllers&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;gradientColor=default;strokeColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="325" y="402" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="&lt;font color=&quot;#000000&quot;&gt;UI&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;gradientColor=default;strokeColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="325" y="361" width="120" height="60" as="geometry"/>
+                </mxCell>
             </root>
         </mxGraphModel>
     </diagram>
