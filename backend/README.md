@@ -5,6 +5,6 @@
 ```bash
 cd backend
 go mod tidy
-sam build
+GOOS=linux GOARCH=amd64 go build -o main main.go
 sam local start-api
 ```
