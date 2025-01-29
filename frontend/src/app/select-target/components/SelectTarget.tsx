@@ -10,7 +10,7 @@ const SelectTarget: React.FC = () => {
       </h1>
 
       <div id="main" className="flex flex-row items-center space-x-4">
-        {[['1st', '/nanase.jpeg'], ['2nd', '/miona.jpeg'], ['3rd', '/yuki.jpeg'], ['4th', '/haruka.jpeg'], ['5th', '/aruno.jpeg']].map(([generation, img], index) => (
+        {[['1st', '/nanase.jpeg'], ['2nd', '/miona.jpeg'], ['3rd', '/yuki.jpeg'], ['4th', '/haruka.jpeg'], ['5th', '/aruno.jpeg']].map(([generation, img]) => (
           <div key={generation} className="flex flex-col items-center">
             <Image
               className="dark:invert"

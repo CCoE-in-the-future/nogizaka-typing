@@ -1,4 +1,4 @@
-module main
+module backend
 
 go 1.21
 
@@ -7,6 +7,7 @@ toolchain go1.23.3
 require (
 	github.com/aws/aws-lambda-go v1.41.0
 	github.com/awslabs/aws-lambda-go-api-proxy v0.16.2
+	github.com/google/uuid v1.5.0
 	github.com/labstack/echo/v4 v4.12.0
 )
 
